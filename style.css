@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --main-bg-color: hsl(217, 54%, 11%);
+  --card-bg-color: hsl(216, 50%, 16%);
+  --line-bg-color: hsl(215, 32%, 27%);
+  --white-color: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  background-color: var(--card-bg-color);
+  border-radius: 15px;
+  margin: 80px 0px;
+  padding: 15px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header .title {
+  margin: 7px 0px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white-color);
+}
+.header p {
+  margin: 8x 0px;
+  font-size: 14px;
+  color: var(--Soft-blue);
+}
+
+.header img {
+  border-radius: 12px;
+}
+
+.container .info {
+  margin: 18px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .info .value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--cyan);
+}
+
+.container .info .time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--Soft-blue);
+}
+
+.container .info .time img,
+.container .info .value img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.line {
+  background-color: var(--line-bg-color);
+  height: 1px;
+}
+
+.footer {
+  padding: 12px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer img {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.footer-text {
+  color: var(--Soft-blue);
+  font-size: 14px;
+}
+
+.footer-text span {
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-text span:hover {
+  color: var(--cyan);
+}
